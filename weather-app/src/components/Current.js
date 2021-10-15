@@ -42,31 +42,30 @@ const Current = () => {
     }
 
     return (
-       <div>
-           <form onSubmit={getCurrent}>
-               <label>
-                   City name:
-                </label>
-                <input
-                    type="text"
-                    placeholder="Enter City"
-                    maxLength="50"
-                    value={city}
-                    onChange={(e) => setCity(e.target.value)}
-                    />
-                <div className="temp">
-                    <p onClick={(e) => setUnit(e.target="imperial")}>°F</p>
-                    <p>|</p>
-                    <p onClick={(e) => setUnit(e.target="metric")}>°C</p>
-                </div>
-                <button type="submit">Get Forecast</button>
-            </form>
-           <Conditions 
-                responseObj={responseObj}
-                error={error}
-                loading={loading} 
-                />
-       </div>
+        <div>
+            <div class="search-conditions">
+                <form class="d-flex align-contents-center" onSubmit={getCurrent}>
+                        <input
+                            type="text"
+                            placeholder="Enter City"
+                            maxLength="50"
+                            value={city}
+                            onChange={(e) => setCity(e.target.value)}
+                            />
+                        <div className="temp">
+                            <p onClick={(e) => setUnit(e.target="imperial")}>°F</p>
+                            <p>|</p>
+                            <p onClick={(e) => setUnit(e.target="metric")}>°C</p>
+                        </div>
+                        <button class="btn btn-outline-secondary" type="submit">Get Forecast</button>
+                    </form>
+            </div>
+            <Conditions 
+            responseObj={responseObj}
+            error={error}
+            loading={loading} 
+            />
+        </div>
     )
 }
 

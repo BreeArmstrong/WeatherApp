@@ -1,11 +1,11 @@
 .App {
-  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  height: 90vh;
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 5vh;
-  font-family: 'Patrick Hand', cursive;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -17,7 +17,6 @@
 .App-footer {
   background-color: #282c34;
   min-height: 5vh;
-  font-family: 'Patrick Hand', cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,8 +27,26 @@
 
 .temp {
   display: flex;
+  margin: 3px 10px;
 }
 
 .temp p {
   margin: 3px;
+}
+
+form {
+  display: inline-block;
+  justify-content: left;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+.greeting {
+  padding-top: 1%;
+  padding-left: 3%;
+}
+
+.current-conditions {
+  text-align: center;
+  max-width: 20%;
+  border-radius: 15px;
 }

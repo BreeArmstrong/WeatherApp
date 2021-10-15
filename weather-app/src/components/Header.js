@@ -1,7 +1,7 @@
 
 function Header() {
     return <header className="App-header">
-    Bree's Weather App
+    Chibi's Weather App
   </header>
 }
 
