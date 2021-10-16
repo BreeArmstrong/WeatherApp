@@ -1,4 +1,5 @@
 import {React, useState} from "react";
+import Ahead from "./Ahead";
 import Conditions from "./Conditions";
 
 const Current = () => {
@@ -64,6 +65,10 @@ const Current = () => {
             responseObj={responseObj}
             error={error}
             loading={loading} 
+            />
+            <Ahead 
+                city={city}
+                unit={unit}
             />
         </div>
     )
